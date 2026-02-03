@@ -40,7 +40,8 @@ sns.set(style="whitegrid")
 trades = pd.read_csv("data/historical_data.csv")
 sentiment = pd.read_csv("data/fear_greed_index.csv")
 # Data Cleaning
-# Convert timestamps
+# Convert timestamps[Trader.docx](https://github.com/user-attachments/files/25043135/Trader.docx)
+
 trades['Timestamp'] = pd.to_datetime(trades['Timestamp'])
 trades['Date'] = trades['Timestamp'].dt.date
 
